@@ -1,0 +1,905 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parler-TTS Model Comparison</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .prompt-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .prompt-info {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .prompt-text {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .description-text {
+            color: #666;
+            font-style: italic;
+        }
+        .model-outputs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .model-output {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 4px;
+            background-color: #fafafa;
+        }
+        .model-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1.1em;
+        }
+        audio {
+            width: 100%;
+            margin-top: 8px;
+        }
+        .metadata {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #eee;
+        }
+        .error {
+            color: #d32f2f;
+            font-style: italic;
+            padding: 10px;
+            background-color: #ffebee;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Parler-TTS Model Comparison Report</h1>
+        <p>Generated: 2025-07-06 17:26:35</p>
+        <p>Models compared: <strong>cp-500-ep3, cp-1000-ep6, cp-1280-ep7</strong></p>
+        <p>Total prompts: 20</p>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_1</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Good morning, sunshine! The day awaits us with endless possibilities.</div>
+            <div class="description-text">Description: Thomas speaks in a happy tone at a lively pace with high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.10s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.82s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.40s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_2</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: I regret to inform you that the results were not what we expected.</div>
+            <div class="description-text">Description: Elisabeth speaks in a sad tone at a moderate pace with low quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.48s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.25s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.04s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_3</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Wait, are you saying the deadline was *yesterday*?</div>
+            <div class="description-text">Description: Jerry speaks in a confused tone with emphasis, moderate pace, high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.88s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.46s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.24s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_4</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: That cat just tried to chase its own shadow!</div>
+            <div class="description-text">Description: Talia speaks with laughter at a lively pace with high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_4.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.04s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_4.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.16s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_4.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.11s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_5</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Keep your voice down, the baby is finally asleep.</div>
+            <div class="description-text">Description: Thomas speaks in a whisper at a slow pace with high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_5.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.33s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_5.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.39s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_5.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.95s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_6</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Our quarterly profits have increased by twelve percent.</div>
+            <div class="description-text">Description: Elisabeth speaks in the default tone at a steady pace with very noisy quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_6.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.51s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_6.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.15s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_6.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.45s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_7</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: I *specifically* asked for decaf, not *espresso*.</div>
+            <div class="description-text">Description: Jerry speaks with emphasis at a moderate pace with high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_7.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.33s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_7.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.38s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_7.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.45s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_8</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Woo hoo, we did it, team!</div>
+            <div class="description-text">Description: Talia speaks in a happy tone at a lively pace with noisy quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_8.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.16s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_8.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 1.96s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_8.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.26s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_9</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: I'm sorry, I really tried my best.</div>
+            <div class="description-text">Description: Thomas speaks in a sad tone with a gentle pace and high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_9.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.11s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_9.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.90s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_9.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.52s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_10</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Oh, you should have seen your face— Priceless!</div>
+            <div class="description-text">Description: Elisabeth speaks with laughter at a lively pace with low quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_10.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.11s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_10.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.41s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_10.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.52s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_11</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: First, we gather the data, second, we visualise it, and finally, we present our findings.</div>
+            <div class="description-text">Description: Jerry speaks in the default tone, clearly marking each comma pause, at a moderate pace with high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_11.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 8.96s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_11.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 7.37s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_11.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 8.37s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_12</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Wait... are you serious?</div>
+            <div class="description-text">Description: Talia speaks in the default tone with a long ellipsis pause, questioning intonation, very noisy quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_12.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.02s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_12.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.00s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_12.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.33s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_13</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Ready, set, go!</div>
+            <div class="description-text">Description: Thomas speaks in a happy tone with rhythmic timing, high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_13.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.50s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_13.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.37s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_13.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.11s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_14</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: I never thought it would end— Like this.</div>
+            <div class="description-text">Description: Elisabeth speaks in a sad tone with a dramatic pause, slow pace, noisy quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_14.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.74s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_14.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 2.94s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_14.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.05s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_15</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Version 2.1.5 fixes thirty-seven bugs.</div>
+            <div class="description-text">Description: Jerry speaks in the default tone at a steady pace, high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_15.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.74s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_15.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.19s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_15.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.23s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_16</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: The *absolute* minimum latency we can accept is ten milliseconds.</div>
+            <div class="description-text">Description: Talia speaks with emphasis on 'absolute', default tone, moderate pace, low quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_16.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.07s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_16.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.65s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_16.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.46s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_17</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: That was *incredible*— No, honestly, *mind-blowing*!</div>
+            <div class="description-text">Description: Thomas speaks with emphasis, very excited tone, moderate pace, high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_17.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.48s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_17.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.89s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_17.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.24s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_18</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: That was *incredible*? No, honestly, *mind-blowing*!.</div>
+            <div class="description-text">Description: Thomas speaks with emphasis, slightly excited tone, moderate pace, high quality audio.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_18.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.66s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_18.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.92s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_18.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.73s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_19</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: The temperature today is twenty-one degree Celsius, dropping to fourteen overnight.</div>
+            <div class="description-text">Description: Jerry speaks in the default tone at a steady pace with rainy background noise.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_19.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.10s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_19.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.81s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_19.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 5.48s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-section">
+        <h2>custom_test_20</h2>
+        <div class="prompt-info">
+            <div class="prompt-text">Prompt: Between you and me, the code name is 'Project Orion'.</div>
+            <div class="description-text">Description: Talia speaks in a whisper at a steady pace with a mild background music.</div>
+        </div>
+        <div class="model-outputs">
+            <div class="model-output">
+                <div class="model-name">cp-500-ep3</div>
+                <audio controls preload="metadata">
+                    <source src="1_cp-500-ep3/cp-500-ep3_custom_test_20.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.66s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1000-ep6</div>
+                <audio controls preload="metadata">
+                    <source src="2_cp-1000-ep6/cp-1000-ep6_custom_test_20.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 3.77s | Sample rate: 44100 Hz
+                </div>
+            </div>
+            <div class="model-output">
+                <div class="model-name">cp-1280-ep7</div>
+                <audio controls preload="metadata">
+                    <source src="3_cp-1280-ep7/cp-1280-ep7_custom_test_20.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="metadata">
+                    Duration: 4.27s | Sample rate: 44100 Hz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Parler-TTS Comparison Report</p>
+    </div>
+</body>
+</html>

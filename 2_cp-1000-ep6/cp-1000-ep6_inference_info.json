@@ -1,0 +1,294 @@
+{
+  "timestamp": "2025-07-06T17:22:34.494837",
+  "model_info": {
+    "name": "2_cp-1000-ep6",
+    "path": "/work/tc068/tc068/tianqi30/parler-tts/mybaby/finetuned_model/parler-tts-mini-expresso_first_outcome/checkpoint-1000-epoch-6",
+    "is_hf_cache": false
+  },
+  "device": "cuda:0",
+  "seed": 42,
+  "prompts_file": "test_prompts/test_prompts.json",
+  "output_dir": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6",
+  "generations": [
+    {
+      "prompt_id": "custom_test_1",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_1.wav",
+      "audio_info": {
+        "duration": 4.818140589569161,
+        "sample_rate": 44100,
+        "shape": [
+          212480
+        ]
+      },
+      "prompt": "Good morning, sunshine! The day awaits us with endless possibilities.",
+      "description": "Thomas speaks in a happy tone at a lively pace with high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_2",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_2.wav",
+      "audio_info": {
+        "duration": 4.249251700680272,
+        "sample_rate": 44100,
+        "shape": [
+          187392
+        ]
+      },
+      "prompt": "I regret to inform you that the results were not what we expected.",
+      "description": "Elisabeth speaks in a sad tone at a moderate pace with low quality audio."
+    },
+    {
+      "prompt_id": "custom_test_3",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_3.wav",
+      "audio_info": {
+        "duration": 5.456689342403628,
+        "sample_rate": 44100,
+        "shape": [
+          240640
+        ]
+      },
+      "prompt": "Wait, are you saying the deadline was *yesterday*?",
+      "description": "Jerry speaks in a confused tone with emphasis, moderate pace, high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_4",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_4.wav",
+      "audio_info": {
+        "duration": 3.1579138321995464,
+        "sample_rate": 44100,
+        "shape": [
+          139264
+        ]
+      },
+      "prompt": "That cat just tried to chase its own shadow!",
+      "description": "Talia speaks with laughter at a lively pace with high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_5",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_5.wav",
+      "audio_info": {
+        "duration": 4.388571428571429,
+        "sample_rate": 44100,
+        "shape": [
+          193536
+        ]
+      },
+      "prompt": "Keep your voice down, the baby is finally asleep.",
+      "description": "Thomas speaks in a whisper at a slow pace with high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_6",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_6.wav",
+      "audio_info": {
+        "duration": 3.1463038548752835,
+        "sample_rate": 44100,
+        "shape": [
+          138752
+        ]
+      },
+      "prompt": "Our quarterly profits have increased by twelve percent.",
+      "description": "Elisabeth speaks in the default tone at a steady pace with very noisy quality audio."
+    },
+    {
+      "prompt_id": "custom_test_7",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_7.wav",
+      "audio_info": {
+        "duration": 4.3769614512471655,
+        "sample_rate": 44100,
+        "shape": [
+          193024
+        ]
+      },
+      "prompt": "I *specifically* asked for decaf, not *espresso*.",
+      "description": "Jerry speaks with emphasis at a moderate pace with high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_8",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_8.wav",
+      "audio_info": {
+        "duration": 1.9620861678004535,
+        "sample_rate": 44100,
+        "shape": [
+          86528
+        ]
+      },
+      "prompt": "Woo hoo, we did it, team!",
+      "description": "Talia speaks in a happy tone at a lively pace with noisy quality audio."
+    },
+    {
+      "prompt_id": "custom_test_9",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_9.wav",
+      "audio_info": {
+        "duration": 2.9024943310657596,
+        "sample_rate": 44100,
+        "shape": [
+          128000
+        ]
+      },
+      "prompt": "I'm sorry, I really tried my best.",
+      "description": "Thomas speaks in a sad tone with a gentle pace and high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_10",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_10.wav",
+      "audio_info": {
+        "duration": 3.4133333333333336,
+        "sample_rate": 44100,
+        "shape": [
+          150528
+        ]
+      },
+      "prompt": "Oh, you should have seen your face\u2014 Priceless!",
+      "description": "Elisabeth speaks with laughter at a lively pace with low quality audio."
+    },
+    {
+      "prompt_id": "custom_test_11",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_11.wav",
+      "audio_info": {
+        "duration": 7.3723356009070296,
+        "sample_rate": 44100,
+        "shape": [
+          325120
+        ]
+      },
+      "prompt": "First, we gather the data, second, we visualise it, and finally, we present our findings.",
+      "description": "Jerry speaks in the default tone, clearly marking each comma pause, at a moderate pace with high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_12",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_12.wav",
+      "audio_info": {
+        "duration": 1.9969160997732427,
+        "sample_rate": 44100,
+        "shape": [
+          88064
+        ]
+      },
+      "prompt": "Wait... are you serious?",
+      "description": "Talia speaks in the default tone with a long ellipsis pause, questioning intonation, very noisy quality audio."
+    },
+    {
+      "prompt_id": "custom_test_13",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_13.wav",
+      "audio_info": {
+        "duration": 2.36843537414966,
+        "sample_rate": 44100,
+        "shape": [
+          104448
+        ]
+      },
+      "prompt": "Ready, set, go!",
+      "description": "Thomas speaks in a happy tone with rhythmic timing, high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_14",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_14.wav",
+      "audio_info": {
+        "duration": 2.9373242630385485,
+        "sample_rate": 44100,
+        "shape": [
+          129536
+        ]
+      },
+      "prompt": "I never thought it would end\u2014 Like this.",
+      "description": "Elisabeth speaks in a sad tone with a dramatic pause, slow pace, noisy quality audio."
+    },
+    {
+      "prompt_id": "custom_test_15",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_15.wav",
+      "audio_info": {
+        "duration": 4.191201814058957,
+        "sample_rate": 44100,
+        "shape": [
+          184832
+        ]
+      },
+      "prompt": "Version 2.1.5 fixes thirty-seven bugs.",
+      "description": "Jerry speaks in the default tone at a steady pace, high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_16",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_16.wav",
+      "audio_info": {
+        "duration": 5.6540589569161,
+        "sample_rate": 44100,
+        "shape": [
+          249344
+        ]
+      },
+      "prompt": "The *absolute* minimum latency we can accept is ten milliseconds.",
+      "description": "Talia speaks with emphasis on 'absolute', default tone, moderate pace, low quality audio."
+    },
+    {
+      "prompt_id": "custom_test_17",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_17.wav",
+      "audio_info": {
+        "duration": 3.889342403628118,
+        "sample_rate": 44100,
+        "shape": [
+          171520
+        ]
+      },
+      "prompt": "That was *incredible*\u2014 No, honestly, *mind-blowing*!",
+      "description": "Thomas speaks with emphasis, very excited tone, moderate pace, high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_18",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_18.wav",
+      "audio_info": {
+        "duration": 4.922630385487528,
+        "sample_rate": 44100,
+        "shape": [
+          217088
+        ]
+      },
+      "prompt": "That was *incredible*? No, honestly, *mind-blowing*!.",
+      "description": "Thomas speaks with emphasis, slightly excited tone, moderate pace, high quality audio."
+    },
+    {
+      "prompt_id": "custom_test_19",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_19.wav",
+      "audio_info": {
+        "duration": 4.806530612244898,
+        "sample_rate": 44100,
+        "shape": [
+          211968
+        ]
+      },
+      "prompt": "The temperature today is twenty-one degree Celsius, dropping to fourteen overnight.",
+      "description": "Jerry speaks in the default tone at a steady pace with rainy background noise."
+    },
+    {
+      "prompt_id": "custom_test_20",
+      "success": true,
+      "output_file": "/work/tc068/tc068/tianqi30/parler-tts/evaluations/comparison_checkpoints_20250706_171935/2_cp-1000-ep6/cp-1000-ep6_custom_test_20.wav",
+      "audio_info": {
+        "duration": 3.7732426303854876,
+        "sample_rate": 44100,
+        "shape": [
+          166400
+        ]
+      },
+      "prompt": "Between you and me, the code name is 'Project Orion'.",
+      "description": "Talia speaks in a whisper at a steady pace with a mild background music."
+    }
+  ]
+}
